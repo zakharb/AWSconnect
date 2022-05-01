@@ -39,5 +39,6 @@ class EC2:
             info = json.dumps(info, indent=4, default=str, ensure_ascii=False)
             print('[+] EC2 getting info success:')
             print(info)
+            return info
         except Exception as e:
             print('[-] EC2 getting info error: ' + repr(e))

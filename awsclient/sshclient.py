@@ -1,4 +1,5 @@
 import paramiko
+from pathlib import Path
 
 
 class SSHClient:
@@ -6,7 +7,8 @@ class SSHClient:
     SSH client to connect and run command in EC2 instance
     """
     def __init__(self, ip, user):
-        self.key = paramiko.RSAKey.from_private_key_file('config/key.pem')
+        home = str(Path.home())
+        self.key = paramiko.RSAKey.from_private_key_file(home + '/.ssh/key.pem')
         self.client = paramiko.SSHClient()
         self.client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         self.ip = ip

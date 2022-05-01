@@ -21,7 +21,8 @@
 </a>  
 
 > AWS Client is python utility that use boto3 library    
-> Put privacy key to `conf` dir and set credentials  
+> Put privacy key to `~/.ssh` dir and set permissions `chmod 400`  
+> Also need to set credentials to AWS  
 
 <a name="install"/>  
 

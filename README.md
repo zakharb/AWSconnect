@@ -25,6 +25,9 @@
 
 <a name="install"/>  
 
+## Install  
+</a>  
+
 - Download installation package and install via `pip`  
 ```
 python3 -m pip install awsclient-XX-py3-none-any.whl  
@@ -36,6 +39,9 @@ python3 -m pip install -e .
 ```
 
 <a name="run"/>  
+
+## Run  
+</a>  
 
 - Start with some help  
 ```
@@ -57,6 +63,9 @@ optional arguments:
 ```
 
 <a name="usage"/>  
+
+## Usage  
+</a>  
 
 - Set configuration to connect ASW instances  
 ```

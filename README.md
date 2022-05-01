@@ -1,5 +1,5 @@
 
-![logo](https://github.com/bengart-ze/ziem/blob/8dad879ec60f847391e0cbcdc3caede0983e3701/logo.png)
+![logo](logo.png)
 
 ## AWS Client  
 ### Utility for EC2 and S3 operations  

@@ -30,27 +30,10 @@ to send, receive messages from SQS
 
 ### Installing
 
-Clone the project
+Install via `pip`
 ```
-git clone git@github.com:zakharb/awsconnect.git
-cd awsconnect
+pip install awsconnect
 ```
-
-Install and activate virtual environment
-```
-python3 -m venv venv
-source venv/bin/activate
-```
-
-Install and run the package
-```
-python3 -m pip install -e .
-python3 -m awsconnect
-```
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/101948294/216649981-3993171c-33d5-40c8-89b9-74993518b277.gif" alt="animated" />
-</p>
 
 ## :orange_square: Run  
 

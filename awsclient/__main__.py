@@ -72,8 +72,8 @@ if __name__ == "__main__":
             print('[-] Set positional arguments')            
     elif args.command == 'sqs':
         print('[*] Starting working with SQS')
-        sqs = SQS(args.queue)
         if args.sqs == 'send':
+            sqs = SQS(args.queue)
             print('[*] SQS start sending messages')
             with open(args.filename, 'r') as f:
                 messages = json.load(f)
@@ -86,6 +86,7 @@ if __name__ == "__main__":
                     print('[+] Write message to SQS: ', resp)
             print('[+] S3 sending finished')
         elif args.sqs == 'receive':
+            sqs = SQS(args.queue)
             print('[*] SQS start receiving messages')
             messages = sqs.receive_messages(args.maxmessages,
                                             args.delay)

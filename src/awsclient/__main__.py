@@ -37,7 +37,8 @@ def print_logo():
           '(__)(__)(__/\__)(___/ \___)(____)(____)(____)(_)\_) (__) \n')
 
 def create_parser():
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(prog='awsclient', 
+                                     usage='%(prog)s [options]')
     subparser = parser.add_subparsers(dest='command')
     # create parser for ec2
     ec2 = subparser.add_parser('ec2', help='Use EC2 service')

@@ -1,78 +1,101 @@
+<p align="center">
+  <a href="https://www.linkedin.com/in/zakharb/microapi">
+  <img src="img/logo.png" alt="logo" />
+</p>
 
-![logo](logo.png)
+<p align="center">
 
-## AWS Client  
-### Utility for EC2 and S3 operations  
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&pause=1000&color=ED7308&center=true&width=435&lines=Get+all+information+from+AWS;EC2+S3+SQS" alt="description" />
+</p>
 
-
-![](https://img.shields.io/badge/version-1.0-blue)
-![](https://img.shields.io/badge/python-3.9-blue)
-
-## Содержание  
-[Important info](#important_info)  
-[Install](#install)  
-[Run](#install)  
-[Usage](#usage)  
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.1-orange" height="20"/>
+  <img src="https://img.shields.io/badge/python-3.11-orange" height="20"/>
+  <img src="https://img.shields.io/badge/boto3-1.26-orange" height="20"/>
+</p>
 
 
-<a name="important_info"/>
+<p align="center">
+  <img src="img/usage.gif" alt="usage" />
+</p>
 
-## Important info  
-</a>  
 
-> AWS Client is python utility that use boto3 library    
-> Put privacy key to `~/.ssh` dir and set permissions `chmod 400`  
-> Also need to set credentials to AWS  
+## :orange_square: Getting Started
 
-<a name="install"/>  
+[AWS Client](https://github.com/zakharb/awsclient) is python utility that use boto3 library    
+to get information about EC2 instances  
+to put, get files from S3 buckets  
+to send, receive messages from SQS  
 
-## Install  
-</a>  
+### Installing
 
-- Download installation package and install via `pip`  
+Clone the project
 ```
-python3 -m pip install awsclient-XX-py3-none-any.whl  
+git clone git@github.com:zakharb/awsclient.git
+cd awsclient
 ```
 
-- Or clone repo and install  
+Install and activate virtual environment
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+Install and run the package
 ```
 python3 -m pip install -e .
+python3 -m awsclient
 ```
 
-<a name="run"/>  
+<p align="center">
+  <img src="img/install.gif" alt="animated" />
+</p>
 
-## Run  
-</a>  
+## :orange_square: Run  
 
-- Start with some help  
+<p align="center">
+  <img src="img/run.png" />
+</p>
+
+### Examples EC2   
+Get information about instances in EC2  
 ```
-└─$ python -m awsclient -h                 
-   __    _    _  ___   ___  __    ____  ____  _  _  ____ 
-  /__\  ( \/\/ )/ __) / __)(  )  (_  _)( ___)( \( )(_  _)
- /(__)\  )    ( \__ \( (__  )(__  _)(_  )__)  )  (   )(  
-(__)(__)(__/\__)(___/ \___)(____)(____)(____)(_)\_) (__) 
+python3 -m awsclient ec2 
+```  
 
-usage: __main__.py [-h] {getinfo,config} ...
-
-positional arguments:
-  {getinfo,config}
-    getinfo         Get info from EC2
-    config          Set AWS connection config
-
-optional arguments:
-  -h, --help        show this help message and exit
+### Examples S3   
+Put files to S3 buckets  
 ```
+python3 -m awsclient s3 put --filename test.json --bucket test  
+```  
 
-<a name="usage"/>  
+Get files from S3 buckets  
+```
+python3 -m awsclient s3 get --filename test.json --bucket test  
+```  
 
-## Usage  
-</a>  
+### Examples SQS   
+Send messages from SQS  
+```
+python3 -m awsclient sqs send --queue test --filename example_sqs_messages.json
+```  
 
-- Set configuration to connect ASW instances  
+Receive messages from SQS  
 ```
-python3 -m awsclient config
-```
-- Get info from EC2 (you can save info to S3 or local file)  
-```
-python3 -m awsclient getinfo -h
-```
+python3 -m awsclient sqs receive --queue test
+```  
+
+## :orange_square: Versioning
+
+Using [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/zakharb/awsclient/tags). 
+
+## :orange_square: Authors
+
+* **Zakhar Bengart** - *Initial work* - [Ze](https://github.com/zakharb)
+
+See also the list of [contributors](https://github.com/zakharb/awsclient/contributors) who participated in this project.
+
+## :orange_square: License
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation - see the [LICENSE](LICENSE) file for details  

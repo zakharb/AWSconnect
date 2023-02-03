@@ -1,6 +1,5 @@
 """
-    SQS API
-    Manager to work with SQS
+    AWSClient
     Copyright (C) 2022
 
     This program is free software: you can redistribute it and/or modify
@@ -20,6 +19,7 @@
         Bengart Zakhar
 
     Description:
+        Class to work with AWS SQS
         
 """
 

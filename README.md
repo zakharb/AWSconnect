@@ -23,7 +23,7 @@
 
 ## :orange_square: Getting Started
 
-[AWS Client](https://github.com/zakharb/awsclient) is python utility that use boto3 library    
+[AWS Client](https://github.com/zakharb/awsconnect) is python utility that use boto3 library    
 to get information about EC2 instances  
 to put, get files from S3 buckets  
 to send, receive messages from SQS  
@@ -32,8 +32,8 @@ to send, receive messages from SQS
 
 Clone the project
 ```
-git clone git@github.com:zakharb/awsclient.git
-cd awsclient
+git clone git@github.com:zakharb/awsconnect.git
+cd awsconnect
 ```
 
 Install and activate virtual environment
@@ -45,7 +45,7 @@ source venv/bin/activate
 Install and run the package
 ```
 python3 -m pip install -e .
-python3 -m awsclient
+python3 -m awsconnect
 ```
 
 <p align="center">
@@ -61,40 +61,40 @@ python3 -m awsclient
 ### Examples EC2   
 Get information about instances in EC2  
 ```
-python3 -m awsclient ec2 
+python3 -m awsconnect ec2 
 ```  
 
 ### Examples S3   
 Put files to S3 buckets  
 ```
-python3 -m awsclient s3 put --filename test.json --bucket test  
+python3 -m awsconnect s3 put --filename test.json --bucket test  
 ```  
 
 Get files from S3 buckets  
 ```
-python3 -m awsclient s3 get --filename test.json --bucket test  
+python3 -m awsconnect s3 get --filename test.json --bucket test  
 ```  
 
 ### Examples SQS   
 Send messages from SQS  
 ```
-python3 -m awsclient sqs send --queue test --filename example_sqs_messages.json
+python3 -m awsconnect sqs send --queue test --filename example_sqs_messages.json
 ```  
 
 Receive messages from SQS  
 ```
-python3 -m awsclient sqs receive --queue test
+python3 -m awsconnect sqs receive --queue test
 ```  
 
 ## :orange_square: Versioning
 
-Using [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/zakharb/awsclient/tags). 
+Using [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/zakharb/awsconnect/tags). 
 
 ## :orange_square: Authors
 
 * **Zakhar Bengart** - *Initial work* - [Ze](https://github.com/zakharb)
 
-See also the list of [contributors](https://github.com/zakharb/awsclient/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/zakharb/awsconnect/contributors) who participated in this project.
 
 ## :orange_square: License
 

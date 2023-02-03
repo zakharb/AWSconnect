@@ -1,5 +1,5 @@
 """
-    AWSClient
+    AWSConnect
     Copyright (C) 2022
 
     This program is free software: you can redistribute it and/or modify
@@ -25,10 +25,10 @@
 
 import json
 import argparse
-from awsclient.ec2 import EC2
-from awsclient.s3 import S3
-from awsclient.sqs import SQS
-from awsclient.config import Config
+from awsconnect.ec2 import EC2
+from awsconnect.s3 import S3
+from awsconnect.sqs import SQS
+from awsconnect.config import Config
 
 def print_logo():
     print('   __    _    _  ___   ___  __    ____  ____  _  _  ____ \n'\
@@ -37,7 +37,7 @@ def print_logo():
           '(__)(__)(__/\__)(___/ \___)(____)(____)(____)(_)\_) (__) \n')
 
 def create_parser():
-    parser = argparse.ArgumentParser(prog='awsclient', 
+    parser = argparse.ArgumentParser(prog='awsconnect', 
                                      usage='%(prog)s [options]')
     subparser = parser.add_subparsers(dest='command')
     # create parser for ec2

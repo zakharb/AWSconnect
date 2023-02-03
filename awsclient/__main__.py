@@ -67,7 +67,7 @@ def create_parser():
     config = subparser.add_parser('config', help='Set AWS connection config')
     return parser
 
-if __name__ == "__main__":
+def main():
     print_logo()
     parser = create_parser()
     args = parser.parse_args()
@@ -128,3 +128,6 @@ if __name__ == "__main__":
         config.set_config()
     else:
         parser.print_help()
+
+if __name__ == "__main__":
+    main()

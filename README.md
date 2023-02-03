@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.linkedin.com/in/zakharb/microapi">
-  <img src="img/logo.png" alt="logo" />
+  <a href="https://www.linkedin.com/in/zakharb/awsconnect">
+  <img src="https://user-images.githubusercontent.com/101948294/216649874-eb5d4a5c-4afc-4719-b758-59dcf8e99687.png" alt=" Low Budget Font" />
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 
 <p align="center">
-  <img src="img/usage.gif" alt="usage" />
+  <img src="https://user-images.githubusercontent.com/101948294/216650151-e03bc7b9-a741-49bf-aafb-757367085cd9.gif" alt="usage" />
 </p>
 
 
@@ -49,13 +49,13 @@ python3 -m awsconnect
 ```
 
 <p align="center">
-  <img src="img/install.gif" alt="animated" />
+  <img src="https://user-images.githubusercontent.com/101948294/216649981-3993171c-33d5-40c8-89b9-74993518b277.gif" alt="animated" />
 </p>
 
 ## :orange_square: Run  
 
 <p align="center">
-  <img src="img/run.png" />
+  <img src="https://user-images.githubusercontent.com/101948294/216650055-e7762559-2e8c-43f3-a6a1-f4bf0a13060c.png" />
 </p>
 
 ### Examples EC2   
